@@ -1,6 +1,5 @@
 /* Background: 0D1321
-   border: h1 h2
-   p 3E5C76
+   border: h1 h p 3E5C76
   a 748CAB
   color: F0EBD8
 
@@ -43,20 +42,91 @@ body {
     }
     #welcome-section {
       height: 100vh;
+      background-color: #0D1321;
     }
-    
+    #projects {
+      width: 100%;
+    }
     .project-tile {
-      width: 100px;
-      height: 200ppx;
-      background-color: #000;
+      width: 100%;
+      height: auto;
+      /* background-color: #000; */
+      text-align: center;
     }
     #aboutme {
-      width: 900px;
-      height: 600px;
+      width: 100%;
+      height: 300px;
       background-color: #748CAB;
     }
+    #portfolio {
+      width: 100%;
+      height: 13000px;
+      background-color: #0D1321;
+
+    }
+
+    ul {
+      display: block;
+      list-style-type: none;
+      margin-top: 1em;
+      margin-bottom: 1 em;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 40px;
+    }
+
+  h1 h2 {
+    color:#3E5C76;
+  }
+i {
+  background-color: white;
+  font-weight: 900;
+  font-size: 100px;
+  /* padding: 2px; */
+}
+
+i:hover {
+  background-color: #0D1321;
+}
+p {
+    color: #3E5C76;
+  }
+
+  .gallery-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      height: 600px;
+      width:  100%;
+      /* background-color: #F0EBD8; */
+    }
+    .box1 { 
+      width: 230px;
+      height: 230px;
+    }
+    .box2 {
+      width: 230px;
+      height: 230px;
+    }
+    .box3 {
+      width: 230px;
+      height: 230px;
+    }
+    .box4 { 
+      width: 230px;
+      height: 230px;
+    }
+    .box5 {
+      width: 230px;
+      height: 230px;
+    }
+    .box6 {
+      width: 230px;
+      height: 230px;
+    }
     
-    
+
+
     @media screen and (max-width: 480px) {
       body {
         background-color: lightgreen;
