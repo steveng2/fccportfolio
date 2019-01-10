@@ -122,7 +122,7 @@ p {
 
 .gallery-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   height: 600px;
   width: 100%;
@@ -149,21 +149,125 @@ img {
   justify-content: center;
 
 }
-/* .me-image {
+.me-image {
   float: right;
   clear: right;
-} */
-@media only screen and  (max-width: 600px) and (min-width: 400px)  {
+} 
+
+@media only screen and  (max-width: 992px) and (min-width: 772px)  {
+  body {
+    background-color: blue;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+  #portfolio {
+    width: 100%;
+    height: 100%;
+    background-color: #0D1321;
+  }
+    p.about-work {
+      margin-top: 1.4em; 
+      margin-bottom: 1.4em;
+      margin-left: 1.2em;
+    
+    }
+    ul {
+      display: block;
+      list-style-type: none;
+      margin-top: 1em;
+      margin-bottom: 1em; 
+      margin-left: 0;
+      margin-right: 0; 
+      padding-left: 40px;
+      padding: 4px;
+      color: white;
+    }
+    
+  
+  .box1, .box2,
+  .box3, .box4, .box5 {
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin-top: 4.6em;
+    margin-bottom: 4.6em;
+    padding: 0.2em;
+  }
+    h2 {
+      color: #3E5C76;
+      text-align: center;
+      font-size: 1.6em;
+      padding: 1.2em;
+    }
+  
+  }
+
+@media only screen and  (max-width: 772px) and (min-width: 601px)  {
+  body {
+    background-color: yellow;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+  #portfolio {
+    width: 100%;
+    height: 100%;
+    background-color: #0D1321;
+  }
+    p.about-work {
+      margin-top: 1.4em; 
+      margin-bottom: 1.4em;
+      margin-left: 1.2em;
+    
+    }
+    ul {
+      display: block;
+      list-style-type: none;
+      margin-top: 1em;
+      margin-bottom: 1em; 
+      margin-left: 0;
+      margin-right: 0; 
+      padding-left: 40px; 
+      padding: 4px;
+      color: white;
+ 
+    }
+    
+  
+  .box1, .box2,
+  .box3, .box4, .box5 {
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin-top: 4.6em;
+    margin-bottom: 4.6em;
+    margin-left: 5px;
+    padding: 0.2em;
+  }
+    h2 {
+      color: #3E5C76;
+      text-align: center;
+      font-size: 1.6em;
+      padding: 1.2em;
+    }
+
+  }
+
+@media only screen and  (max-width: 600px) and (min-width: 479px)  {
 body {
   background-color: red;
   display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: 100%; 
   justify-content: center;
   }
   #portfolio {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
+  
   p.about-work {
     display: none;
     margin-top: 4px; 
@@ -174,10 +278,11 @@ body {
     width: 230px;
     height: 230px;
     /* padding-left: 40px;
-    margin-top: 57px; */
-    margin-top: 40px;
-    padding-top: 50px;
-
+    padding-right: 40px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin-top: 30px;
+    padding-top: 5px;
   }
 
   h2 {
@@ -186,22 +291,23 @@ body {
     font-size: 1.6em;
     padding: 1.2em;
   }
-
 }
 
 @media screen and (max-width: 480px) {
   body {
     background-color: lightgreen;
   }
+
+.me-image {
+  display: none;
+}
 .gallery-container {
   display: block;
   width: 100%;
   height: 100%;
   justify-content: center;
   }
-  #portfolio {
-    display: block;
-  }
+
   p.about-work {
     display: none;
     margin-top: 4px; 
@@ -279,7 +385,6 @@ ul {
   margin-left: 0;
   margin-right: 0;
   padding-left: 40px;
-  color: brown;
 }
   h2 {
     padding-top: 1.2em;
@@ -290,16 +395,19 @@ ul {
     /* padding: 1.2em; */
   }
 .gallery-container {
-  display:flex;
-  width: 100%;
+  display: inline-flex;
+  width: 100%; 
+  max-width: 100%;
   height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
+  }
+  #portfolio {
+    display: block;
   }
 .box1, .box2, .box3, .box4, .box5, .box6  {
-  width: 230px;
+  max-width: 100%;
   height: 230px;
-  padding-left: 40px;
-  margin-top: 57px;
+  margin-top: 3em;
 }
 }
 
@@ -341,5 +449,5 @@ ul {
   padding-left: 40px;
   margin-top: 57px;
 }
-} */
+} 
 
